@@ -1,1 +1,153 @@
-<h1>xay trang web</h1>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    <title>Nghia Ngo</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootsnav.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome_all.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="site-preloader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+        <div id="body-wrap">
+            <header id="header">
+                <nav class="navbar navbar-default bootsnav affix-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" style="padding-top: 12px">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html#about-area">
+                                <p class="logo">Nghia Ngo</p>
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+                                <li>
+                                    <a href="index.html#header">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#about-area">About</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#skill-area">Skill</a>
+                                </li>
+                                <li class="active">
+                                    <a href="index.html#blog-area">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="blog-details-wrap" style="color:#777 !important">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-post-single">
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h4>Chiến lược static website với GithubPages</h4>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 22-09-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <blockquote>Để tăng thêm sự hứng thú, thì tôi xin cung cấp thông tin là webiste này cũng được xây dựng trên chiến lược static web với GitHubPages.</blockquote>
+                                        <h3>Lợi thế của chiến lược này:</h3>
+                                        <ul>
+                                            <li>- Load cực nhanh và không thể bị hack (vì nó là web tĩnh, cache được hỗ trợ tối đa -> SEO cực tốt)</li>
+                                            <li>- Hoàn toàn free, không tốn phí duy trì. Nếu không dùng tên miền của github thì mới tốn thêm chi phí tên miền.</li>
+                                            <li>- Rất đơn giản để triển khai ở mức basic</li>
+                                        </ul>
+                                        <br>
+                                        <h3>Nhược điểm:</h3>
+                                        <ul>
+                                            <li>- Không thể áp dụng cho hệ thống phức tạp, cần tới ngôn ngữ back-end.</li>
+                                            <li>- Số lượng file html lớn, phải xây dựng bằng tay hoặc dùng Jekyll hoặc viết tool hỗ trợ generate ra file html.</li>
+                                        </ul>
+                                        <br>
+                                        <h3>Những việc cần chuẩn bị:</h3>
+                                        <ul>
+                                            <li>- HTML website, có 1 trang index.html, kiểu giống các HTML template</li>
+                                            <li>- Github account</li>
+                                        </ul>
+                                        <br>
+                                        <h3>Bước 1: Tạo Github repo</h3>
+                                        <p>Repo được tạo với tên theo định dạng: username.github.io với username là username dùng để đăng nhập Github</p>
+                                        <h3>Bước 2: Push source HTML website đã chuẩn bị lên repo</h3>
+                                        <p>Command line để push source</p>
+                                        <blockquote>
+                                            git init<br>
+                                            git add .<br>
+                                            git commit -m "messages"<br>
+                                            git remote link-to-repo<br>
+                                            git push -u origin master<br>
+                                        </blockquote>
+                                        <h3>Bước 3: Check thành quả nào!</h3>
+                                        <p>Truy cập vào url dạng username.github.io với username là username để đăng nhập Github</p>
+                                        <p>Việc hiển thị có thể mất khoảng 10 phút, vì đợi Github tiến hành build.</p>
+                                        <h3>Gợi ý về việc triển khai với hệ thống phức tạp.</h3>
+                                        <p>Chẳng hạn như blog hay danh mục sản phẩm, thì với chiến lược này, mỗi post cần phải có 1 trang html
+                                            Vậy nên nếu không muốn làm bằng tay, chúng ta có thể dùng Jekyll (dùng generate ra html từ markdown). Tuy nhiên Jekyll
+                                            chỉ có 1 số theme nhất định. Vì vậy ta có thể viết 1 tool để generate ra html, đọc file layout, replace nội dung như title, nội dung, ảnh ...
+                                        </p>
+                                        <p>Các file html phải nằm cùng cấp trong file index.html, và đường link truy cập có dạng là: .../ten-file.html</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget tags">
+                                <h4>Tags</h4>
+                                <ul>
+                                    <li>
+                                        <a href="">Github</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Static web</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HTML, CSS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="bg-gray text-center">
+                <p>© Copy 2018. All Rights Reserved</p>
+
+                <div class="totop">
+                    <a href="#header">
+                        <i class="fas fa-arrow-alt-circle-up"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </div>
+</body>
+
+</html>

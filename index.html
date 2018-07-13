@@ -11,11 +11,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome_all.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="site-preloader" style="display: none;">
+        <div class="site-preloader">
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
@@ -27,10 +28,10 @@
                 <nav class="navbar navbar-default bootsnav affix-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <button type="button" class="collapse navbar-toggle">
-                                <i class="icofont icofont-navigation-menu"></i>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" style="padding-top: 12px">
+                                <i class="fas fa-bars"></i>
                             </button>
-                            <a class="navbar-brand" href="#aboutme">
+                            <a class="navbar-brand" href="#about-area">
                                 <p class="logo">Nghia Ngo</p>
                             </a>
                         </div>
@@ -46,26 +47,370 @@
                                     <a href="#skill-area">Skill</a>
                                 </li>
                                 <li>
-                                    <a href="#services-area">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio-area">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#testimonial-area">Testimonial</a>
-                                </li>
-                                <li>
                                     <a href="#blog-area">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#contact-area">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </header>
+
+            <section id="welcome-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4">
+                            <div class="welcome-img">
+                                <img src="assets/images/nghia.png" class="img-responsive" alt="Image">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="welcome-content animated zoomIn">
+                                <h3>Hello, I’m</h3>
+                                <h1>Nghia Ngo</h1>
+                                <p>Experiencing over 5 years in software development, especially, out-sourcing for Japanese
+                                    clients including 2 years of programming Window application, using .NET and over 3 years
+                                    of web developing using .NET MVC and Java Spring.</p>
+                                <div class="welcome-btn">
+                                    <a href="#about-area">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-area" class="bg-gray">
+                <!--Start Container-->
+                <div class="container">
+                    <div class="heading text-center">
+                        <h2>About Me</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="about-content">
+                                <p>- Be responsible and careful in tasks implement.</p>
+                                <p>- Be ability to learn quickly and master about technologies and business.</p>
+                                <p>- Be ability to judge, refer, self-study, learn and discuss to come up with solutions.</p>
+                                <a href="">Download My CV</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="about-contact-info">
+                                <p>
+                                    <span>
+                                        <i class="fas fa-envelope"></i> Email Me : </span>nghia.ngo.2410@gmail.com</p>
+                                <p>
+                                    <span>
+                                        <i class="fas fa-phone"></i> Call Me : </span>01667 319 803</p>
+                                <p>
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i> Address : </span> Da Nang, Viet Nam</p>
+                            </div>
+                            <div class="about-social">
+                                <h5>Follow Me :</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://fb.com/suzunghia" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/nghia-ngo-2410" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skill-area">
+                <div class="heading text-center">
+                    <h2>My Skill</h2>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fas fa-code"></i>
+                                <h5>Programing Languages</h5>
+                                <p>.NET (C#, VB.NET)</p>
+                                <p>JAVA</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fas fa-file-code"></i>
+                                <h5>Framework</h5>
+                                <p>ASP.NET MVC</p>
+                                <p>Java Spring boot with Hibernate</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fas fa-database"></i>
+                                <h5>Database</h5>
+                                <p>Microsoft SQL</p>
+                                <p>Oracle</p>
+                                <p>MySQL</p>
+                                <p>Postgresql</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fas fa-desktop"></i>
+                                <h5>Front-end</h5>
+                                <p>Angular 4</p>
+                                <p>JS</p>
+                                <p>HTML5/CSS3</p>
+                                <p>Responsive, Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fab fa-aws"></i>
+                                <h5>Amazon web service</h5>
+                                <p>EC2</p>
+                                <p>RDS</p>
+                                <p>S3</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single text-center">
+                                <i class="fas fa-code-branch"></i>
+                                <h5>Tool for development</h5>
+                                <p>SVN</p>
+                                <p>GIT</p>
+                                <p>Redmine</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog-area" class="bg-gray">
+                <div class="heading text-center">
+                    <h2>My Blog</h2>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="xay-dung-trang-web-github.html" target="_blank">
+                                        <img src="assets/images/github-page.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="xay-dung-trang-web-github.html" target="_blank">Chiến lược static website với GithubPages</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 22-09-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Liệu có thể deploy website đơn giản dạng giới thiệu, chia sẻ thông tin, blog mà không
+                                            cần quan tâm đến server, chi phí... không?. Cùng tìm hiểu về chiến lược static
+                                            web với GithubPages.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="">
+                                        <img src="assets/images/gitflow.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="">Tổ chức Git theo mô hình gitflow</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 24-10-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Git tổ chức theo mô hình Gitflow là gì? Mục đích, lợi ích, cách triển khai và vấn
+                                            đề phát sinh như thế nào? Vì sao mà mô hình này lại được SourceTree đưa vào thành
+                                            1 chức năng? Cùng tìm hiểu nào!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="">
+                                        <img src="assets/images/tree.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="">Cách thức tổ chức và lưu trữ data dạng phân cấp</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 24-10-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Việc tổ chức data dạng phân cấp thường sử dụng là kiểu cây cha con, node con sẽ lưu
+                                            thông tin id của node cha. Vấn đề là làm sao để re-order node con sau khi xóa
+                                            node cha? Cùng tìm hiểu cách xử lý.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="">
+                                        <img src="assets/images/collector.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="">Nghệ thuật thao tác với dữ liệu kiểu list - Java</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 24-10-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Với sự xuất hiện của stream trong Collector của Java8, việc thao tác với dữ liệu
+                                            kiểu list đã được nâng lên tầm nghệ thuật về syntax cũng như performance. Cùng
+                                            tìm hiểu về nghệ thuật này!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="">
+                                        <img src="assets/images/aspcore.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="">ASP.NET Core là gì? Thay đổi lớn cho lập trình web</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 24-10-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Một open-source framework với cross-platform và high-performance, cùng với sự xuất
+                                            hiện của VSCode, hứa hẹn đem lại nhiều thay đổi về xu hướng lập trình web. Cùng
+                                            khám phá nào?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="blog-post-single">
+                                <div class="post-media">
+                                    <a href="">
+                                        <img src="assets/images/front-end.png" class="img-responsive" alt="Image">
+                                    </a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta">
+                                        <h2 class="m-0">
+                                            <a href="">Những thư viện front-end thường được dùng.</a>
+                                        </h2>
+                                        <p>
+                                            <a href="">
+                                                <i class="fas fa-user"></i> Admin</a>
+                                            <small>|</small>
+                                            <a href="">
+                                                <i class="fas fa-calendar-alt"></i> 24-10-2017</a>
+                                        </p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Những trang web hiện đại thường có nhiều tương tác, animation thú vị để tăng trải nghiệm người dùng. Cùng tìm hiểu về công dụng và cách dùng 1 số thư viện js,css thông dụng.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="browse-more-btn text-center">
+                        <a href="">Browse More</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer" class="bg-gray text-center">
+                <p>© Copy 2018. All Rights Reserved</p>
+
+                <div class="totop">
+                    <a href="#header">
+                        <i class="fas fa-arrow-alt-circle-up"></i>
+                    </a>
+                </div>
+            </footer>
         </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
     </div>
 </body>
 

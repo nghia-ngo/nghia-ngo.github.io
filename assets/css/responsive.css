@@ -24,8 +24,11 @@
     #welcome-area {
         padding: 50px 0 0;
     }
+    .welcome-img {
+        padding-top: 15%;
+    }
     .welcome-content {
-        padding: 18% 0 0;
+        padding: 0;
     }
     .page-heading {
         padding: 35px 0 30px;

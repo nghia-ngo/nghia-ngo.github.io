@@ -494,6 +494,9 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .logo {
+        padding-top: 12px;
+    }
 }
 
 @media (min-width: 1024px) {

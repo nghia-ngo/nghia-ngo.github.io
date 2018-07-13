@@ -210,7 +210,6 @@ blockquote {
 .logo {
     color: #fc6f5c !important;
     font-weight: 600;
-    padding: 12px 15px;
     font-size: 20px;
 }
 
@@ -249,7 +248,7 @@ nav.navbar.bootsnav {
 =======================================================================================*/
 
 .welcome-content {
-    padding: 32% 0 0;
+    padding: 10% 0 0;
 }
 
 .welcome-content h3 {
