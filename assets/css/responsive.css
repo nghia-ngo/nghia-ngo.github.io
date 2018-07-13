@@ -60,6 +60,7 @@
     }
     .welcome-content {
         padding: 50px 0 0;
+        text-align: justify !important;
     }
     .welcome-content h3 {
         font-size: 18px;
@@ -156,6 +157,7 @@
     }
     .welcome-content {
         padding: 50px 0 0;
+        text-align: justify !important;
     }
     .welcome-content h3 {
         font-size: 18px;
@@ -260,6 +262,7 @@
     }
     .welcome-content {
         padding: 50px 0 0;
+        text-align: justify !important;
     }
     .welcome-content h3 {
         font-size: 18px;
