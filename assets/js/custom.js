@@ -14,7 +14,7 @@
         $('#certificate-net').magnificPopup({
             items:
             {
-                src: 'assets/files/.net.pdf',  
+                src: 'assets/files/dotnet.pdf',  
             },
             type:'iframe'
         });
