@@ -2,25 +2,6 @@
     "use strict";
 
     $(document).ready(function () {
-        /*---------------------------------------------------
-            Portfolio Filter
-        ----------------------------------------------------*/
-        // var Container = $('.container');
-        // Container.imagesLoaded(function () {
-        //     var portfolio = $('.portfolio-menu');
-        //     portfolio.on('click', 'button', function () {
-        //         $(this).addClass('active').siblings().removeClass('active');
-        //         var filterValue = $(this).attr('data-filter');
-        //         $grid.isotope({
-        //             filter: filterValue
-        //         });
-        //     });
-        //     var $grid = $('.portfolio-list').isotope({
-        //         itemSelector: '.grid-item'
-        //     });
-
-        // });
-
         // Lazy load
         var allimages= document.getElementsByTagName('img');
         for (var i=0; i<allimages.length; i++) {
@@ -28,6 +9,23 @@
                 allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
             }
         }
+
+        //Popup
+        $('#certificate-net').magnificPopup({
+            items:
+            {
+                src: 'assets/files/.net.pdf',  
+            },
+            type:'iframe'
+        });
+
+        $('#certificate-java').magnificPopup({
+            items:
+            {
+                src: 'assets/files/java.pdf',  
+            },
+            type:'iframe'
+        });
 
     });
 

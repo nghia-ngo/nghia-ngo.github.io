@@ -1015,3 +1015,9 @@ nav.navbar.bootsnav {
 #demo-preview-area {
     padding: 100px 0 60px;
 }
+
+#certificate-net:hover, #certificate-java:hover  {
+    color: #fc6f5c;
+    cursor: pointer;
+
+}
